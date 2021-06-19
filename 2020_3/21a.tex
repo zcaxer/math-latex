@@ -1,0 +1,40 @@
+\documentclass[class=ctexart,crop=false]{standalone}
+
+\input{../mathpre}
+\begin{document}
+\begin{enumerate}[label=(\arabic*)]
+    \item 解:\\
+    由题意得:$f'(\frac{1}{2})=0$\\
+    而$f'(x)=3x^2+b\\$
+    故$f'(\frac{1}{2})=\frac{3}{4}+b=0\\
+    \Rightarrow b=-\frac{3}{4}$
+    \item 证明:(法一)\\
+    由题意,$\exists x_0 \in [-1,1]$,使$f(x_0)=x_0^3-\frac{3}{4}x_0+c=0$\\
+    则$c=-x_0^3+\frac{3}{4}x_0$\\
+    则 $\begin{aligned}[t]
+        f(x)&=x^3-x_0^3-\frac{3}{4}x+\frac{3}{4}x_0\\
+        &=(x-x_0)(x^2+x_0x+x_0^2)-\frac{3}{4}(x-x_0)\\
+        &=(x-x_0)(x^2+x_0x+x_0^2-\frac{3}{4})\\
+    \end{aligned} $\\
+    则 $f(x)$ 的其他零点必为方程 $x^2+x_0x+x_0^2-\frac{3}{4}=0$的根\\
+    $$x=\frac{-x_0 \pm \sqrt{x_0^2-4(x_0^2-\frac{3}{4})}}{2}=\frac{-x_0\pm \sqrt{3-3x_0^2}}{2}$$\\
+    不妨设 $x_0=\sin \theta(\theta \in [-\frac{\pi}{2},\frac{\pi}{2}])$,\\
+    则 $\begin{aligned}[t]
+        x&=-\frac{1}{2}\sin \theta \pm \frac{\sqrt{3}}{2} \cos \theta\\
+        &=-\sin (\theta \pm \frac{\pi}{3})\\
+    \end{aligned}$\\
+    故 $|x| \leqslant1$\\
+    故$f(x)$  所有零点的绝对值都不大于1\\
+    法二:\\
+    $f'(x)=0 \Rightarrow 3x^2-\frac{3}{4}=0 \Rightarrow x=\pm \frac{1}{2}$\\
+    故 $x\in (-\infty,-\frac{1}{2}], f(x)$单调递增,
+    $x\in (-\frac{1}{2},\frac{1}{2}), f(x)$单调递减,
+    $x\in [-\frac{1}{2},\infty), f(x)$单调递增\\
+    $f(-1)=c-\frac{1}{4},f(-\frac{1}{2})=c+\frac{1}{4},
+    f(\frac{1}{2})=c-\frac{1}{4},f(1)=c+\frac{1}{4}$\\
+    若有一个零点$\in [-1,1]$,则 $c-\frac{1}{4}\leqslant 0,c+\frac{1}{4}\geqslant 0$\\
+    故 $x \in (-\infty,-1),x < f(-1)=c-\frac{1}{4}<0$\\
+    $x \in (1,-\infty),x > f(1)=c+\frac{1}{4}>0$\\
+    故 $f(x)$所有零点均在 $[-1,1]$中,即 $f(x)$  所有零点的绝对值都不大于1\\
+\end{enumerate}
+\end{document}

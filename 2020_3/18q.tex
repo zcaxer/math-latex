@@ -1,0 +1,46 @@
+\documentclass[class=ctexart,crop=false]{standalone}
+
+\input{../mathpre}
+\begin{document}
+某学生兴许小组随机调查了某市100天中每天的空气质量等级
+和当天到某公园锻炼的人次,整理数据得到下表(单位:天):\\
+\begin{tabular}{|c|c|c|c|}
+    \hline
+    \diagbox {空气质量等级}{锻炼人次} &$[0,200]$&$(200,400]$&$(400,600]$\\
+    \hline
+    1(优) & 2& 16&25\\ 
+    \hline
+    2(良) &5&10&12\\
+    \hline
+    3(轻度污染) &6&7&8\\
+    \hline
+    4(重度污染) &7&2&0\\
+    \hline
+\end{tabular}
+\begin{enumerate}[label=(\arabic*)]
+    \item 分别估计该市一天的空气质量等级为$1,2,3,4$的概率;
+    \item 求一天中到该公园锻炼的平均人次的估计值(同一组中的
+    数据用该区间的中点值为代表);
+    \item 若某天的空气质量等级为1或2，则称这天“空气质量好”；
+    若某天的空气质量等级为3或4，则称这天“空气质量不好”．根据
+    所给数据，完成下面的$2\times 2$列联表，并根据列联表，判
+    断是否有$95\%$的把握认为一天中到该公园锻炼的人次与该市当
+    天的空气质量有关？
+\end{enumerate}
+\begin{tabular}{|c|c|c|}
+    \hline
+        &人次 $\leqslant 400 $ &人次 $> 400 $\\
+        \hline
+    空气质量好 & \quad & \\
+    \hline
+    空气质量不好 & &\\
+    \hline
+\end{tabular} \\
+附: $K^2=\frac{n(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)}$,
+\begin{tabular}{c|ccc}
+    $P(K^2 \geqslant k)$ &$0.050$&$0.010$&$0.001$\\
+    \hline
+    $k$&$3.841$&$6.635$&$10.828$\\
+\end{tabular}
+
+\end{document}

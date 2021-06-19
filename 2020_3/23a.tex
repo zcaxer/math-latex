@@ -1,0 +1,35 @@
+\documentclass[class=ctexart,crop=false]{standalone}
+
+\input{../mathpre}
+\begin{document}
+\begin{enumerate}[label=(\arabic*)]
+    \item 证明:\\
+    由 $(a+b+c)^2=a^2+b^2+c^2+2ab+2bc+2ac=0\\$
+    得: $ab+bc+ca=-\frac{a^2+b^2+c^2}{2}$\\
+    又由 $abc=1$,故 $a,b,c \neq 0$\\
+    则: $a+b+c<0$
+    \item 证明:(法一)\\
+    易知 $a,b,c$中有且仅有2个为负数,一个为正数,不妨设该正数为 $a$\\
+    则 $max\{a,b,c\}$即为a;\\
+    由 $a+b+c=0,\Rightarrow b=-a-c$\\
+    又由$abc=1 \Rightarrow \begin{aligned}[t]
+        -ac(a+c)=1\\
+        ac^2+a^2c+1=0
+    \end{aligned} $\\
+    将上式视为 $a$为参数关于 $c$的二次方程,若要 $c$存在,则必有:\\
+    $a^4-4a\geqslant 0$\\
+    则:$(a^3-4)\geqslant 0$\\
+    又 $a\neq 0$,故有 $a \geqslant \sqrt[3]{4}$\\
+    法二:\\
+    $b=\frac{1}{ac},\begin{aligned}[t]
+        & \text{由} a+b+c=1\\
+       & \Leftrightarrow a=(\frac{-1}{ac}-c) \geqslant 2\sqrt{\frac{1}{a}}\\
+        &\Leftrightarrow a- 2\sqrt{\frac{1}{a}}\geqslant 0\\
+        &\Leftrightarrow a^\frac{3}{2}- \geqslant 2\\
+        &\Leftrightarrow a \geqslant \sqrt[3]{4}\\
+    \end{aligned} $\\
+    法三:$a=\frac{1}{bc},a^2=(b+c)^2,\\
+    a^3=\frac{(b+c)^2}{bc}=\frac{b^2+c^2+2bc}{bc}\geqslant \frac{2bc+2bc}{bc}=4$
+\end{enumerate}
+
+\end{document}

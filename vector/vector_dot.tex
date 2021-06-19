@@ -1,0 +1,25 @@
+\documentclass[class=ctexart,crop=false]{standalone}
+\input{../mathpre}
+\begin{document}
+    
+$A(x_1,y_1),B(x_2,y_2),O(0,0)$\\
+则 $|\vec{OA}|^2=x_1^2+y_1^2$\\ 
+ $|\vec{OB}|^2=x_2^2+y_2^2$\\ 
+ $|\vec{AB}|^2=(x_1-x_2)^2+(y_1-y_2)^2$\\ 
+$\begin{aligned}[t]
+    \cos<\vec{A},\vec{B}>
+    &=\frac{|\vec{OA}|^2+|\vec{OB}|^2-|\vec{AB}|^2}
+    {2\sqrt{|\vec{OA}||\vec{OB}|}}\\
+    &=\frac{x_1^2+y_1^2+x_2^2+y_2^2-x_1^2+2x_1x_1-x_1^2
+    -y_1^2+2y_1y_2-y_2^2}
+    {2\sqrt{(x_1^2+y_1^2)(x_2^2+y_2^2)}}\\
+    &=\frac{x_1x_2+y_1y_2}{\sqrt{(x_1^2+y_1^2)(x_2^2+y_2^2)}}
+\end{aligned}$\\
+则:\\
+ $$|A||B|\cos<\vec{A},\vec{B}>=\frac{x_1x_2+y_1y_2}{\sqrt{(x_1^2+y_1^2)(x_2^2+y_2^2)}}
+\times \sqrt{(x_1^2+y_1^2)(x_2^2+y_2^2)}\\
+=x_1x_2+y_1y_2$$
+
+\end{document}
+
+

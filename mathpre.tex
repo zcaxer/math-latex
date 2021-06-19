@@ -1,0 +1,22 @@
+\usepackage{amsmath,amssymb,enumitem,empheq,tkz-euclide,
+diagbox,wrapfig,pgfplots}
+\pgfplotsset{compat=newest}
+\renewcommand\parallel{\mathrel{/\mskip-2.5mu/}}
+
+\newcommand\px{\mathrel{/\mkern-5mu/}}  %平行
+\newcommand\pxeq{\mathrel{\vcenter{     %平行且等于
+\ialign{\hfil##\hfil\crcr
+$\scriptstyle\px\!$\crcr
+\noalign{\nointerlineskip\vskip1pt}$=$\crcr}}}}
+
+%\setCJKmainfont{SimSun}       %设置西文字体为times new roman
+%\setCJKsansfont{SimSun}             %设置中文字体为宋体
+%\setCJKmonofont{STKaiti}
+%\setsansfont{TeX Gyre Termes}            %设置typewriter family中文字体为楷体
+%\setmonofont{TeX Gyre Termes}
+
+\usetikzlibrary{calc,intersections,through,backgrounds,patterns}
+\newcounter{para}
+\newcommand\mypara{\par\refstepcounter{para}\thepara.\space}%设置typewriter family西文字体为times new roman
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=1.3pt] (char) {#1};}}

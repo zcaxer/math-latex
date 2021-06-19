@@ -1,0 +1,25 @@
+\documentclass[class=ctexart,crop=false]{standalone}
+
+\input{mathpre}
+\begin{document}
+引理:$C_m^n=C_{m-1}^{n-1}+C_{m-1}^n$\\
+$\begin{aligned}[t]
+    \sum\limits_{j=i}^n C_j^i&=C_i^i+C_{i+1}^i+···+C_n^i\\
+    &=C_{i+1}^{i+1}+C_{i+1}^i+···+C_n^i\\
+    &=C_{i+1}^{i+2}+C_{i+2}^i+···+C_n^i\\
+    & \dots\\
+    &=C_{n+1}^{i+1}
+\end{aligned}$\\
+$\begin{aligned}[t]
+    P/A&=\sum\limits_{i=1}^n \frac{1}{(1+r)^i} \\
+    &=\frac{\sum\limits_{i=1}^n (1+r)^{i-1}}{(1+r)^n}  \\
+    &=\frac{\sum\limits_{i=1}^n\sum\limits_{j=0}^{i-1} C_i^jr^j} {(1+r)^n}  \\
+    &=\frac{\sum\limits_{i=1}^{n-1}\sum\limits_{j=i}^{n-1} C_j^ir^i} {(1+r)^n}  \\
+    &=\frac{\sum\limits_{i=0}^{n-1} C_n^{i+1} r^i} {(1+r)^n}  \\
+    &=\frac{\sum\limits_{i=0}^{n-1} C_n^{i+1} r^{i+1}} {r(1+r)^n}  \\
+    &=\frac{\sum\limits_{i=1}^{n} C_n^{i} r^{i}} {r(1+r)^n}  \\
+    &=\frac{(1+r)^{n}-1}{r(1+r)^n}
+\end{aligned}$\\
+证毕
+
+\end{document}

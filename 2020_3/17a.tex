@@ -1,0 +1,30 @@
+\documentclass[class=ctexart,crop=false]{standalone}
+
+\input{../mathpre}
+\begin{document}
+\begin{enumerate}[label=(\arabic*)]
+    \item 解:\\
+    $a_2=3a_1-4=5,a_3=3a_2-8=7$\\
+    故猜想 ${a_n}=2n+1$\\
+    证明:(一般猜想后证明只需证明其正确性,既满足所给递推式,但保险起见,还是从递推式推导出通项,既是证明,又是推导)\\
+    $\begin{aligned}[t]
+        a_{n+1}&=3a_n-4n\\
+        a_{n+1}-2(n+1)+2&=3a_n-6n\\
+        a_{n+1}-2(n+1)-1&=3a_n-6n+3=3(a_n-2n-1)\\
+    \end{aligned}$\\
+故 $\{a_n-2n-1\}$ 是公比为3,首项为 $a_1-2-1=0$的等比数列,即全为0的数列\\
+故 ${a_n-2n-1}=0\Rightarrow a_n=2n+1$\\
+    \item 解:\\
+    ${2^na_n}=2^n2n+2^n \\
+    S_n=\sum\limits_{i=1}^{n}[2^n(2n+1)]\\
+    \begin{aligned}[t]
+        2S_n&=\sum\limits_{i=1}^{n}[2^{n+1}(2n+1)]\\
+        &=\sum\limits_{i=1}^{n}[2^{n+1}(2n+3)]-2\sum\limits_{i=1}^{n}2^{n+1}\\
+        &=S_{n+1}-2\times (2+1)-2(2^{n+2}-4)\\
+        &=S_n+2^{n+1}(2n+3)-2^{n+3}-2\\
+    S_n&=2^{n+1}2n+3\times 2^{n+1}-4\times 2^{n+1}-2\\
+    &=2^{n+1}2n-2^{n+1}-2\\
+    \end{aligned}$\\
+\end{enumerate}
+
+\end{document}

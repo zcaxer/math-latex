@@ -1,0 +1,36 @@
+\documentclass[class=ctexart,crop=false]{standalone}
+
+\input{../mathpre}
+\begin{document}
+解:
+\begin{enumerate}[label=(\arabic*)]
+    \item 
+   $ P( \text{质量等级为}1)=\frac{2+16+25}{100}=0.33 $\\
+   $ P( \text{质量等级为}2)=\frac{5+10+12}{100}=0.27 $\\
+   $ P( \text{质量等级为}3)=\frac{6+7+8}{100}=0.21 $\\
+   $ P( \text{质量等级为}4)=\frac{7+2+0}{100}=0.9 $\\
+    \item 一天中到该公园锻炼的平均人次的估计值= \\
+    $\frac{1}{100}\times[100\times(2+5+6+7)+300\times(16+10+7+2)+500\times(25+12+8+0)]\\
+    =350$
+    \item \begin{tabular}{|c|c|c|}
+        \hline
+            &人次 $\leqslant 400 $ &人次 $> 400 $\\
+            \hline
+        空气质量好 & 33 & 37 \\
+        \hline
+        空气质量不好 & 22& 8\\
+        \hline
+    \end{tabular} \\
+    $\begin{aligned}[t]
+        K^2&=\frac{n(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)}\\
+        &=\frac{100(33\times 8-37 \times 22)^2}{(33+37)(22+8)(33+22)(37+8)}\\
+        &=\frac{100(264-814)^2}{70\times 30\times 55\times 45}\\
+        &=\frac{(550)^2}{21\times 55\times 45}\\
+        &=\frac{(550\times 10)}{21\times 45}\\
+        &=\frac{(110\times 10)}{21\times 9}\\
+        &\approx 5.820 > 3.841\\
+    \end{aligned}$\\
+    故有$95\%$的把握认为一天中到该公园锻炼的人次与该市当
+    天的空气质量有关
+\end{enumerate}
+\end{document}
