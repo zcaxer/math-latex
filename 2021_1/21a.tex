@@ -16,16 +16,19 @@
 	      故, $x \in (0,\frac{2}{ln2}]$ 时, $f(x)$ 单调递增\\
 	      $x \in [\frac{2}{ln2},+\infty)$ 时, $f(x)$ 单调递减\\
 	\item \quad\\
-	      $\begin{aligned}[t]
-			      f'(x) & =ax^{a-1}a^{-x}+x^a(-\ln{a})a^{-x} \\
-			            & =x^{a-1}a^{-x}(a-x\ln{a})          \\
-		      \end{aligned}$\\
-	      类似(1),我们有:\\
+显然 $a>0$
+$\begin{aligned}[t]
+		f'(x) & =ax^{a-1}a^{-x}+x^a(-\ln{a})a^{-x} \\
+		      & =x^{a-1}a^{-x}(a-x\ln{a})          \\
+	\end{aligned}$\\
+考察函数得到： $f(a)=1$
+$a\ln{a}>0$ 即 $a>1$ 时，类似(1),我们有:\\
 	      $x \in (0,\frac{a}{\ln{a}}]$ 时, $f(x)$ 单调递增\\
-	      $x \in [\frac{a}{\ln{a}},+\infty)$ 时, $f(x)$ 单调递减\\
-	      考察函数得到： $f(a)=1$
+$x \in [\frac{a}{\ln{a}},+\infty)$ 时, $f(x)$ 单调递减\\
 	      若 $f(X)$ 与 $y=1$ 有且仅有两个交点，则 $x=a$ 必然不是极值点\\
-	      即 $a\ln{a} \neq a \Rightarrow a \neq e$且\\
-	      $a\ln{a}>0 \Rightarrow a>0$\\
+即 $a\ln{a} \neq a \Rightarrow a \neq e$\\
+$a\ln{a} \leqslant 0 \Rightarrow a \leqslant 1$ 时,
+$f(x)$单调递减,与题设不符\\
+故 $a$ 的取值范围为 $(1,e)\cup (e,+\infty)$
 \end{enumerate}
 \end{document}
