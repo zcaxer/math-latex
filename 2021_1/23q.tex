@@ -1,0 +1,16 @@
+\documentclass[class=ctexart,crop=false]{standalone}
+
+\input{../mathpre}
+\begin{document}
+已知函数 $f(x)=|x-2|,g(x)=|2x+3|-|2x-1|\\$
+\begin{tikzpicture}
+	\draw[help lines,black,step=0.5] (0,0) grid (9,9); %网格线
+	\draw [->] (-0.5,4.5)--(9.5,4.5) node[below right] {$x$};
+	\draw [->] (4.5,-0.5)--(4.5,9.5) node[above right] {$y$};
+\end{tikzpicture}
+
+\begin{enumerate}[label=(\arabic*)]
+	\item 画出 $f(x)$ 和 $g(x)$ 的图像;
+	\item 若 $f(x+a) \geqslant g(x)$,求 $a$ 的取值范围.
+\end{enumerate}
+\end{document}
