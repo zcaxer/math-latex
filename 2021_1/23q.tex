@@ -3,10 +3,10 @@
 \input{../mathpre}
 \begin{document}
 已知函数 $f(x)=|x-2|,g(x)=|2x+3|-|2x-1|\\$
-\begin{tikzpicture}
-	\draw[help lines,black,step=0.5] (0,0) grid (9,9); %网格线
-	\draw [->] (-0.5,4.5)--(9.5,4.5) node[below right] {$x$};
-	\draw [->] (4.5,-0.5)--(4.5,9.5) node[above right] {$y$};
+\begin{tikzpicture}[scale=0.5]
+\draw[help lines,black] (-9,-9) grid (9,9); %网格线
+\draw [->,thick] (-9,0)--(10,0) node[below] {$x$};
+\draw [->,thick] (0,-9)--(0,10) node[right] {$y$};
 \end{tikzpicture}
 
 \begin{enumerate}[label=(\arabic*)]
