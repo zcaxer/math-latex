@@ -1,0 +1,29 @@
+\documentclass[class=ctexart,crop=false]{standalone}
+
+\input{../mathpre}
+\begin{document}
+解:
+\begin{enumerate}[label=(\arabic*)]
+	\item
+	      由$\rho^2=x^2+y^2,\rho\cos{\theta}=x$\\
+	      $\begin{aligned}[t]
+			      \text{故}C: & \rho^2=2\sqrt{2}\cos{\theta} \\
+			                  & x^2+y^2=2\sqrt{2}x           \\
+			      \text{即:}  & (x-\sqrt{2})^2+y^2=2
+		      \end{aligned}$
+	\item  \quad\\
+	      设 $P(x,y),M(2\sqrt{2}\cos^2{\theta},2\sqrt{2}\sin{\theta}\cos{\theta})$\\
+	      由题意: $\overrightarrow{AM}=(\sqrt{2}\cos{2\theta}+\sqrt{2}-1,\sqrt{2}\sin{2\theta})$\\
+	      则 $\overrightarrow{AP}=(x-1,y)=\sqrt{2}\overrightarrow{AM}=(2\cos{2\theta}+2-\sqrt2,2\sin{2\theta})$\\
+	      故: $C_1: \left\{\begin{aligned}
+			      x & =2\cos{2\theta}-\sqrt{2}+3 \\
+			      y & =2\sin{2\theta}
+		      \end{aligned}\right.$($\theta$为参数)\\
+	      由（1）得: $C$为圆，圆心在 $(\sqrt{2},0)$, 半径为 $\sqrt{2}$\\
+	      $C_1:(x-3+\sqrt{2})^2+y^2=4$ 也是圆\\
+	      故 $C_1$ 圆心在 $(3-\sqrt{2},0)$ ,半径为 $2$\\
+	      两圆圆心距 $d=|\sqrt{2}-3+\sqrt{2}|=3-2\sqrt{2}<r_1-r_C=2-\sqrt{2}$\\
+	      故 $C$ 内含于 $C_1$
+
+\end{enumerate}
+\end{document}
