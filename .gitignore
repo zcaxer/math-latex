@@ -14,7 +14,5 @@
 .stfolder/
 .stversions/
 .stignore
-beamtry.toc
-beamtry.out
-解析几何/function_derivative__classified_discussion.toc
-解析几何/function_derivative__classified_discussion.out
+*.toc
+*.out
