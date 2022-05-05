@@ -1,0 +1,19 @@
+\documentclass[class=ctexart,crop=false]{standalone}
+
+\input{../mathpre}
+
+\begin{document}
+
+$f(x),g(x)$均为增函数,$\phi(x)=f(x)g(x)$
+
+记$\frac{f(x_1)-f(x_2)}{x_1-x_2}=\Delta(f)$\\
+$\begin{aligned}[t]
+        \Delta(\phi)=
+        \frac{\phi(x_1)-\phi(x_2)}{x_1-x_2}                                  \\
+        =\frac{f(x_1)g(x_1)-f(x_2)g(x_2)}{x_1-x_2}                           \\
+        =\frac{f(x_1)g(x_1)-f(x_1)g(x_2)+f(x_1)g(x_2)-f(x_2)g(x_2)}{x_1-x_2} \\
+        =\frac{f(x_1)[g(x_1)-g(x_2)]+g(x_2)[f(x_1)-f(x_2)]}{x_1-x_2}         \\
+        =f(x_1)\Delta(g)+g(x_2)\Delta(f)
+    \end{aligned}$
+
+\end{document}
