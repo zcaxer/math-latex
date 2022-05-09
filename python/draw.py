@@ -14,7 +14,7 @@ title = u'甲离子残留百分比直方图'
 def ddot(ax, x, value):
         '''画水平虚线
         ax:axes
-        x:x最大值，决定虚线长度
+        x:x最大值,决定虚线长度
         value:虚线高度'''
         ax.hlines(y=value, xmin=0, xmax=x, linewidth=1, color='k', linestyles='--')
 
@@ -34,8 +34,8 @@ ax.yaxis.set_label_coords(0.08, 1)  # y轴标签位置
 ax.hist(bin_edge[:-1], bin_edge, density=1,
         weights=frequency, linewidth=0.5, edgecolor='k', color='w')
 
-ax.spines['right'].set_visible(False)  # 获取绘图区的轴对象（spines），设置右边框不显示
-ax.spines['top'].set_visible(False)  # 获取绘图区的轴对象（spines），设置上边框不显示
+ax.spines['right'].set_visible(False)  # 获取绘图区的轴对象（spines）,设置右边框不显示
+ax.spines['top'].set_visible(False)  # 获取绘图区的轴对象（spines）,设置上边框不显示
 
 ax.arrow(0, -0.001, bin_edge[-1] + 0.16, 0, width=0.0000001,
          head_width=0.012, head_length=0.14, fc='k', ec='k')
