@@ -1,0 +1,28 @@
+\documentclass[class=ctexart,crop=false]{standalone}
+
+\input{../../mathpre}
+\begin{document}
+\begin{enumerate}[label=(\Roman*)]
+    \item $g(x)=e^x({\cos{x}-\sin{x}})=-\sqrt{2}e^x\sin{(x-\frac{\pi}{4})}$\\
+    故 $f(x)$的递增区间为 $[2k\pi+\frac{\pi}{4},2k\pi+\frac{5\pi}{4}]$\\
+    故 $f(x)$的递减区间为 $[2k\pi-\frac{3\pi}{4},2k\pi+\frac{\pi}{4}]$
+    \item 记$h(x)=f(x)+g(x)(\frac{\pi}{2}-x)$\\
+    则 $h'(x)=g(x)+g'(x)(\frac{\pi}{2}-x)-g(x)\\
+    =-2e^x\sin{x}(\frac{\pi}{2}-x)\\
+    x \in [\frac{\pi}{4},\frac{\pi}{2}]$时,$h'(x)\leqslant 0$\\
+    故 $h(x)$单调递减,
+    且 $h(\frac{\pi}{2})=0$\\
+    故此时 $h(x)\geqslant 0$
+    \item 
+    $x_n$为 $f(x)-1=0$的零点，即 $e^{x_n}\cos{x_n}=1$\\
+    $x \in (2n\pi+\frac{\pi}{4},2n\pi+\frac{\pi}{2})$
+    则$x-2n\pi \in (\frac{\pi}{4},\frac{\pi}{2})$\\
+    $x_n$越大$e^x_n$也越大，则 $\cos{x_n}$越小,则 $x_n-2n\pi$越大\\
+    $f(x_n-2n\pi)=e^{x_n-2n\pi}\cos{(x_n-2n\pi)}=e^{-2n\pi}$\\
+    由 \RNum{2} 得 $f(x-2n\pi)+g(x_n-2n\pi)(\frac{\pi}{2}-x+2n\pi)\geqslant 0$\\
+    考察 $g(x),g'(x)=-2e^x\sin{x},x\in (\frac{\pi}{4},\frac{\pi}{2})$时, $g'(x)<0$\\
+    故 $g(x)$单调递减, $n>1$时,$g(x_n-2n\pi)< g(x_0)<0$\\
+    故 $\frac{\pi}{2}-x+2n\pi \leqslant \frac{-e^{-2n\pi}}{g(x_n-2n\pi)}<\frac{e^{-2n\pi}}{-g(x_0)}=\frac{e^{-2n\pi}}{e^{x_0}(sinx_0-cosx_0)}<\frac{e^{-2n\pi}}{\sin{x_0}-\cos{x_0}}$\\
+    x
+\end{enumerate}
+\end{document}

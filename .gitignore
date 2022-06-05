@@ -8,7 +8,6 @@
 *.sta
 *.pgf
 *.pgf-plot.*
-*.pgf-plot.*
 *.xdv
 .vscode/
 .stfolder/
