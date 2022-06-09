@@ -1,0 +1,53 @@
+\documentclass[class=ctexart,crop=false]{standalone}
+
+\input{../../mathpre}
+\begin{document}
+    \begin{enumerate}[label=(\arabic*)]
+        \item $a_2a_4=a_5 \Rightarrow a_1^2q^4=a_1q^4 \Rightarrow a_1=1$\\
+        $a_3-4a_2+4a_1=0 \Rightarrow q^2-4q+4=0 \Rightarrow q=2$\\
+        故 $\{a_n\} =2^{n-1}$是 “M-数列”
+        \item \begin{enumerate}[label=\protect \circled{ \arabic*}]
+            \item   $S_n=\frac{1}{\frac{2}{b_n}-\frac{2}{b_{n+1}}}=\frac{b_nb_{n+1}}{2(b_{n+1}-b_n)} \\$
+                    $S_{n+1}=\frac{b_{n+1}b_{n+2}}{2(b_{n+2}-b_{n+1})} \\  $
+            $\begin{aligned}[t]
+                b_{n+1}&=S_{n+1}-S_n\\
+                &=b_{n+1}[\frac{b_{n+2}(b_{n+1}-b_n)-b_n(b_{n+2}-b_{n+1})}{2(b_{n+2}-b_{n+1})(b_{n+1}-b_{n})}]                    
+            \end{aligned}$\\
+$            2(b_{n+2}b_{n+1}-b_{n+2}b_{n}-b_{n+1}^2+b_{n}b_{n+1})\\
+            =(b_{n+2}b_{n+1}-2b_{n}b_{n+2}+b_{n}b_{n+1})\\$
+            $b_{n+2}b_{n+1}-2b_{n+1}^2+b_{n}b_{n+1}=0$\\
+            $b_{n+1}(b_{n+2}-2b_{n+1}+b_n)=0\\$
+            故 $\{b_n\} $为等差数列\\
+            $n=1$时,$1=2-\frac{2}{b_2}\Rightarrow b_2=2$\\
+            故 $\{b_n\}=n $
+            \item 
+            设 $\{c_n\}=q^{n-1} $
+            由题意: 
+            $\begin{aligned}[t]
+                &c_{k}\leqslant b_k \leqslant c_{k+1}\\
+                &q^{k-1} \leqslant k\leqslant q^{k} \\
+                &(k-1)\ln{q} \leqslant \ln{k} \leqslant k\ln{q}\\
+                &\frac{\ln{k}}{k} \leqslant \ln{q} \leqslant \frac{\ln{k}}{k-1}
+            \end{aligned}$ \\
+            设 $f(x)=\frac{\ln{x}}{x}$ 则 $f'(x)=\frac{1-\ln{x}}{x^2}$\\
+            $f'(x)=0$时 $x=e \\
+            x<e$时 $f(x)$单调递增 $x>e$时 $f(x)$单调递减\\
+            故 $f(x)$ 在 $x=e$ 处取得最大值。\\
+            若 $x$取整数, $f(2)=\frac{\ln{2}}{2}=\ln(\sqrt[6]{8}),f(3)=\frac{\ln{3}}{3}=\ln(\sqrt[6]{9})$\\
+            故 $f(x)$在$x=3$处取得最大值\\
+            即 只需  $q \geqslant \sqrt[3]{3} ,f(x)\leqslant \ln{q}$恒成立\\
+            设 $g(x)=\frac{\ln{x}}{x-1},f'(x)=\frac{1-\frac{1}{x}-\ln{x}}{(x-1)^2}$\\
+            记$h(x)=1-\frac{1}{x}-\ln{x},h'(x)=\frac{1}{x^2}-\frac{1}{x}$\\
+            $x>0$时,$x=1$时取得最大值 $h(1)=0$\\
+            故 $g'(x) \leqslant 0,g(x)$单调递减\\
+            $k \leqslant 3$时 $g(x)$递减$,f(x)$递增\\
+            只需 $\sqrt[3]{3}\leqslant q \leqslant \sqrt{3}$,\\
+            便有$f(x) \leqslant f(3) \leqslant \ln{q} \leqslant g(3) \leqslant g(x)$\\
+            $k >3$后 $g(x)$递减,当 $g(x)< \ln \sqrt[3]{3}$时，不等式在 $k=3$处不成立\\
+            而 $g(5)=\ln(\sqrt[4]{5})=\ln(\sqrt[12]{125})$\\
+            $g(6)=\ln(\sqrt[5]{6})=\ln(\sqrt[15]{216})$\\
+            而 $\sqrt[3]{3}=\sqrt[12]{81}=\sqrt[15]{243}$\\
+            故 $k$最大为5,即 $m=5$
+        \end{enumerate}
+    \end{enumerate}
+\end{document}
