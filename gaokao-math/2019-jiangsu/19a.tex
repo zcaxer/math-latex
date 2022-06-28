@@ -4,6 +4,19 @@
 \begin{document}
     \begin{enumerate}[label=(\arabic*)]
         \item 由题意 $f(x)=(x-a)^3,f(4)=(4-a)^3=8\Rightarrow a=2$
-        \item 
+        \item 由题意 $f(x)=(x-a)(x-b)^2\\
+            f'(x)=(x-b)^2+2(x-a)(x-b)=(x-b)(3x-2a-b)$\\
+            故 $\frac{2a+b}{3}$则 $a,b$只能为$-3$和 $3$\\
+            若 $a=-3,b=3$时 $\frac{2a+b}{3}=-1$(舍去)\\
+            若 $a=3,b=-3$时 $\frac{2a+b}{3}=1$(符合题意)\\
+            故 $f(x)=(x-3)(x+3)^2,f'(x)=(x+3)(3x-3)$\\
+            $x<-3,f'(x)>0;-3\leqslant x \leqslant 1,f'(x)\leqslant 0;x>1,f'(x)>0;$\\
+            故在 $x=1$处取得极小值 $f(1)=-2*16=-32$            
+        \item 由题意 $f(x)=x(x-b)(x-1)=(x^2-x)(x-b)=x^3-(b+1)x^2+bx\\
+        f'(x)=3x^2-2(b+1)x+b$\\
+        $f'(x)=0$时 $3x^2-2(b+1)x+b=0\\$
+        易知$f(x)$在$x_0=\frac{2(b+1)-\sqrt{4(b+1)^2-4\cdot 3b}}{6}
+        =\frac{b+1-\sqrt{b^2-b+1}}{3}$处取得极大值\\
+        $x_0^2=\frac{2b^2+b+2-2(b+1)\sqrt{b^2-b+1}}{9}, x_0^3=\frac{4b^3+3b^2+3b-3b\sqrt{b^2-b+1}}{27}$
     \end{enumerate}
 \end{document}
