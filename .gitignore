@@ -12,6 +12,8 @@
 .vscode/
 .stfolder/
 .stversions/
+.idea/
 .stignore
 *.toc
 *.out
+
