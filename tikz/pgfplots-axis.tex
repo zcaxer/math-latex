@@ -1,0 +1,32 @@
+\documentclass[class=ctexart,crop=false]{standalone}
+
+\input{../mathpre}
+
+\begin{document}
+
+
+\pgfplotsset{
+    standard/.style={
+        axis x line=middle,
+        axis y line=middle,
+        enlarge x limits=0.15,
+        enlarge y limits=0.15,
+        every axis x label/.style={at={(current axis.right of origin)},anchor=north },
+      %  every axis y label/.style={at={(current axis.above of origin)},anchor=south west}
+    }
+}
+
+\begin{tikzpicture}
+\begin{axis}[
+    standard,
+    xlabel=$t$,
+    ylabel=$v$,
+    xtick={0,1.7},
+    xticklabels={0,$t_1$},
+    ytick={0,21},
+    yticklabels={0,$v_0$}
+]
+\addplot[thick,color=black] coordinates { (0,21) (1.7,21) (8.7,0) };
+\end{axis} 
+\end{tikzpicture}
+\end{document}
