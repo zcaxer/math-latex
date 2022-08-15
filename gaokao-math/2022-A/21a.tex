@@ -1,0 +1,33 @@
+\documentclass[class=ctexart,crop=false]{standalone}
+
+\input{../../mathpre}
+\begin{document}
+解:显然 $x>0$
+\begin{enumerate}[label=(\arabic*)]
+    \item 
+    由题意 $a\leqslant \frac{e^x}{x}-\ln{x}+x$\\
+    记 $g(x)=\frac{e^x}{x}-\ln{x}+x$\\
+    则 $\begin{aligned}[t]
+        g'(x)&=\frac{xe^x-e^x}{x^2}-\frac{1}{x}+1\\
+        &=\frac{e^x(x-1)+x(x-1)}{x^2}\\
+        &=\frac{(e^x+x)(x-1)}{x}\\
+    \end{aligned}$ 
+    $x<1$时 $g(x)<0$,$x>1$时 $g(x)>0$
+    故 $g(x)$ 在 $x=1$ 处取得最小值 $g(1)=1+e$.\\
+    故 $a \leqslant 1+e$
+    \item   不妨设 $0<x_1<1<x_2$\\
+            $x_1x_2<1\iff x_1<\frac{1}{x_2}<1$\\
+            由1知:$x<1$时$,f(x)$单调递减\\
+            则$x_1<\frac{1}{x_2}\Leftrightarrow f(\frac{1}{x_2})<f(x_1)=0=f(x_2)$\\
+            记 $\phi(x)=f(x)-f(\frac{1}{x}),x\in (0,1]$\\
+            $\begin{aligned}[t]
+                \phi '(x)&=\frac{(e^x+x)(x-1)}{x}-\frac{(e^x+x)(x-1)}{x}(\frac{-1}{x^2})\\
+                        &=\frac{(e^x+x)(x-1)}{x}(\frac{x^2+1}{x^2})\\
+            \end{aligned}$\\
+            故 $\phi'(x)<0,\phi(x)$单调递减\\
+            $\phi(1)=f(1)-f(1)=0$\\
+            故 $x\in (0,1)$时 $\phi(x)>\phi(1)=0\\
+            \Rightarrow f(x_1)=f(x_2)>f(\frac{1}{x_2})\\
+            \Rightarrow x_1<\frac{1}{x_2}\Rightarrow x_1x_2<1$
+\end{enumerate}
+\end{document}

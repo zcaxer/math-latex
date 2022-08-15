@@ -1,0 +1,42 @@
+\documentclass[class=ctexart,crop=false]{standalone}
+
+\input{../../mathpre}
+\begin{document}
+设抛物线 $C:y^2=2px,A(a,0),B(ab,0)$,经过 $A$的直线交 $C$于 $M,N$两点,
+直线$MB,NB$与 $C$的另一交点分别为 $P,Q$,求 $PQ$与 $x$轴的交点.\\
+解:设 $M(\frac{m^2}{2p},m),N(\frac{n^2}{2p},n)$\\
+$k_{MN}=\frac{m-n}{\frac{m^2}{2p}-\frac{n^2}{2p}}=\frac{2p}{m+n}$\\
+$l_{MN}:y=\frac{2p}{m+n}(x-\frac{m^2}{2p})=\frac{2p}{m+n}x-\frac{mn}{m+n}
+=\frac{2px-mn}{m+n}$\\
+$l$经过 $(a,0)$ 则 $mn=2pa$\\
+$K_{MD}=\frac{m}{\frac{m^2}{2p}-ab}$\\
+则 $MD:y=\frac{1}{\frac{m}{2p}-\frac{ab}{m}}(x-ab)$
+$$ \left\{\begin{aligned}
+ &y=\frac{1}{\frac{m}{2p}-\frac{ab}{m}}(x-ab) , \\ 
+ &y^2=2px 
+\end{aligned}\right.$$
+消去 $x$ 得:$(\frac{m}{2p}-\frac{ab}{m})y=\frac{y^2}{2p}-ab
+\Leftrightarrow y^2-(m-\frac{2abp}{m})y-2abp=0$\\
+$故 $A(\frac{16}{m^2},-\frac{2abp}{m})$\\
+同理 $B(\frac{16}{n^2},-\frac{8}{n})$\\
+故 $k_{AB}=\frac{\frac{8}{m}-\frac{8}{n}}{16(\frac{1}{n^2}-\frac{1}{m^2})}
+=\frac{-1}{2(\frac{1}{m}+\frac{1}{n})}=\frac{-mn}{2(m+n)}=\frac{k}{2}$\\
+$\begin{aligned}[t]
+    l_{AB}&=\frac{-mn}{2(m+n)}(x-\frac{16}{m^2})-\frac{8}{m}\\ 
+    &=\frac{-mn}{2(m+n)}x+\frac{8n}{m(m+n)}-\frac{8}{m}\\
+    &=\frac{-mnx-16}{2(m+n)}\\
+    &=\frac{k}{2}(x-4)
+\end{aligned}$\\
+$y=0$时 $-\frac{8}{m}\cdot\frac{2(m+n)}{mn}=x-\frac{16}{m^2}\Rightarrow x=\frac{-16}{mn}=4$\\
+故  $\alpha,\beta$同是第一象限角或第二象限角,则 $\alpha-\beta\in (-\frac{\pi}{2},\frac{\pi}{2})$\\
+此时 $\tan{x}$单调递增\\
+$\tan(\alpha-\beta)=\frac{\tan{\alpha}-\tan{\beta}}{1+\tan{\alpha}\tan{\beta}}
+=\frac{k-\frac{k}{2}}{1+\frac{k^2}{2}}=\frac{1}{\frac{2}{k}+k}$\\
+显然 $k<0$时,$\tan(\alpha-\beta)<0,\alpha-\beta<0$\\
+$k>0$时,$\tan(\alpha-\beta)=\frac{1}{\frac{2}{k}+k}\leqslant \frac{1}{2\sqrt{2}}$\\
+$k=\sqrt{2}$时取等号,此时 $\tan(\alpha-\beta)$取得最大值,$\alpha-\beta$也取得最大值\\
+此时 $m\text{满足} m^2-2\sqrt{2}m-4=0,\text{取}m=\sqrt{2}+\sqrt{6}\\
+\text{则}A(8-4\sqrt{3},2\sqrt{2}-2\sqrt{6})$\\
+$\text{故}k_{AB}=\frac{\sqrt{2}}{2},AB:y=\frac{\sqrt{2}}{2}(x-8+4\sqrt{3})+2\sqrt{2}-2\sqrt{6}=\frac{\sqrt{2}}{2}x-2\sqrt{2}$
+
+\end{document}

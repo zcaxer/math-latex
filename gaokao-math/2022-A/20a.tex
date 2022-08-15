@@ -1,0 +1,47 @@
+\documentclass[class=ctexart,crop=false]{standalone}
+
+\input{../../mathpre}
+\begin{document}
+解:设 $M(\frac{m^2}{2p},m),N(\frac{n^2}{2p},n)$
+\begin{enumerate}[label=(\arabic*)]
+    \item $MD\perp x$轴,$\frac{m^2}{2p}=p$ 由抛物线性质,$|MF|=p+\frac{p}{2}=3$\\
+            故 $p=2,C:y^2=4x$焦点 $F(1,0)$ 
+    \item   直线$MN$的斜率不存在时,$AB$的斜率也不存在,此时$\alpha-\beta=0$\\
+            故由题意设 $MN:y=k(x-1)$,且 $k\neq 0$
+            $$\left\{\begin{aligned}
+            &y=k(x-1)  , \\ 
+            &y^2=4x  
+            \end{aligned}\right.$$
+            消去 $x$得 $\frac{y^2}{4}-\frac{y}{k}-1=0$\\
+            故 $mn=-4,m+n=\frac{4}{k}$\\
+            $K_{MD}=\frac{m}{\frac{m^2}{4}-2}$\\
+            则 $MD:y=\frac{1}{\frac{m}{4}-\frac{2}{m}}(x-2)$
+            $$ \left\{\begin{aligned}
+             &y=\frac{1}{\frac{m}{4}-\frac{2}{m}}(x-2) , \\ 
+             &y^2=4x 
+            \end{aligned}\right.$$
+            消去 $x$ 得:$y^2-(m-\frac{8}{m})y-8=0$\\
+            $y_1y_2=-8,$故 $A(\frac{16}{m^2},-\frac{8}{m})$\\
+            同理 $B(\frac{16}{n^2},-\frac{8}{n})$\\
+            故 $k_{AB}=\frac{\frac{8}{m}-\frac{8}{n}}{16(\frac{1}{n^2}-\frac{1}{m^2})}
+            =\frac{-1}{2(\frac{1}{m}+\frac{1}{n})}=\frac{-mn}{2(m+n)}=\frac{k}{2}$\\
+            $\begin{aligned}[t]
+                l_{AB}&=\frac{-mn}{2(m+n)}(x-\frac{16}{m^2})-\frac{8}{m}\\
+                &=\frac{-mn}{2(m+n)}x+\frac{8n}{m(m+n)}-\frac{8}{m}\\
+                &=\frac{-mnx-16}{2(m+n)}\\
+                &=\frac{k}{2}(x-4)
+            \end{aligned}$\\
+            $y=0$时 $-\frac{8}{m}\cdot\frac{2(m+n)}{mn}=x-\frac{16}{m^2}\Rightarrow x=\frac{-16}{mn}=4$\\
+            故  $\alpha,\beta$同是第一象限角或第二象限角,则 $\alpha-\beta\in (-\frac{\pi}{2},\frac{\pi}{2})$\\
+            此时 $\tan{x}$单调递增\\
+            $\tan(\alpha-\beta)=\frac{\tan{\alpha}-\tan{\beta}}{1+\tan{\alpha}\tan{\beta}}
+            =\frac{k-\frac{k}{2}}{1+\frac{k^2}{2}}=\frac{1}{\frac{2}{k}+k}$\\
+            显然 $k<0$时,$\tan(\alpha-\beta)<0,\alpha-\beta<0$\\
+            $k>0$时,$\tan(\alpha-\beta)=\frac{1}{\frac{2}{k}+k}\leqslant \frac{1}{2\sqrt{2}}$\\
+            $k=\sqrt{2}$时取等号,此时 $\tan(\alpha-\beta)$取得最大值,$\alpha-\beta$也取得最大值\\
+            此时 $m\text{满足} m^2-2\sqrt{2}m-4=0,\text{取}m=\sqrt{2}+\sqrt{6}\\
+            \text{则}A(8-4\sqrt{3},2\sqrt{2}-2\sqrt{6})$\\
+            $\text{故}k_{AB}=\frac{\sqrt{2}}{2},AB:y=\frac{\sqrt{2}}{2}(x-8+4\sqrt{3})+2\sqrt{2}-2\sqrt{6}=\frac{\sqrt{2}}{2}x-2\sqrt{2}$
+            
+\end{enumerate}
+\end{document}
