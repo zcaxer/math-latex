@@ -1,0 +1,13 @@
+\documentclass[class=ctexart,crop=false]{standalone}
+
+\input{../../mathpre}
+\begin{document}
+    \begin{tikzpicture}
+        \node[label={[label distance=0.005cm]90:{$A$}},circle,fill,inner sep=1pt] (A) at (0,4) {};
+        \node[label={[label distance=0.005cm]60:{$B$}},circle,fill,inner sep=1pt] (B) at (2,0) {};
+        \node[label={[label distance=0.005cm]120:{$C$}},circle,fill,inner sep=1pt] (C) at (-1,0) {};
+        \node[label={[label distance=0.005cm]120:{$P$}},circle,fill,inner sep=1pt] (P) at (-1,1) {};
+        \node[label={[label distance=0.005cm]120:{$Q$}},circle,fill,inner sep=1pt] (Q) at (2,1) {};
+        \draw (A)--(B)--(C)--(A);
+    \end{tikzpicture}
+\end{document}
