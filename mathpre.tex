@@ -19,6 +19,16 @@ $\scriptstyle\px\!$\crcr
 %\setsansfont{TeX Gyre Termes}            %设置typewriter family中文字体为楷体
 %\setmonofont{TeX Gyre Termes}
 
+\setmainfont{IBM Plex Serif}%Times New Roman
+\setsansfont{IBM Plex Sans}
+\setmonofont{IBM Plex Mono}
+% 中文字体配置部分
+\usepackage{xeCJK}%中文字体
+\setCJKmainfont{Noto Serif CJK SC}%正文字体
+\setCJKsansfont{Noto Sans CJK SC}%无衬线字体
+\setCJKmonofont{Noto Sans Mono CJK SC}%等宽字体
+%\setCJKfamilyfont{boldsong}{Source Han Serif SC Heavy}
+
 \usetikzlibrary{calc,intersections,through,backgrounds,patterns}
 \newcounter{para}
 \newcommand\mypara{\par\refstepcounter{para}\thepara.\space}%设置typewriter family西文字体为times new roman
